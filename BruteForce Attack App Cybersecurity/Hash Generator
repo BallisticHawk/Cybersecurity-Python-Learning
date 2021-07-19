@@ -1,0 +1,8 @@
+import hashlib
+
+
+text_str = input("Enter text: ")
+text_utf8 = text_str.encode("utf-8")
+hash_value = hashlib.md5(text_utf8).hexdigest()
+print("Text: " + text_str)
+print("Hash Value: " + hash_value)

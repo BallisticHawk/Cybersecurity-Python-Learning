@@ -1,0 +1,15 @@
+import hashlib 
+
+characters = "0123456789"
+password = input("Enter hashed password: ")
+for a in characters:
+  for b in characters:
+    for c in characters:
+      for d in characters:
+        for e in characters:
+          for f in characters:
+            guess = a + b + c + d + e + f 
+            text_utf8 = guess.encode("utf-8")
+            hash_value = hashlib.md5(text_utf8).hexdigest()
+            if hash_value == password:
+              print("Password is " + guess)
