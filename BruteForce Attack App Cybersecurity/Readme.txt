@@ -1,0 +1,1 @@
+Run this in Microsoft Visual Studio Code and have a Python Interpreator
